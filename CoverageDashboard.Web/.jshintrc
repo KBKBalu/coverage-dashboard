@@ -1,0 +1,46 @@
+{
+  "strict": "global",
+  "globals": {
+    //epam uui
+    "$": false,
+    "jQuery": false,
+    "console": false,
+    "spyOn": false,
+    "runs": false,
+    "waitsFor": false,
+    "loadFixtures": false,
+    "UUI": true,
+
+    // Angular
+    "angular": false,
+
+    // Angular mocks
+    "module": false,
+    "inject": false,
+
+    // Jasmine
+    "jasmine": false,
+    "describe": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "it": false,
+    "expect": false,
+
+    // Protractor
+    "browser": false,
+    "element": false,
+    "by": false
+  },
+  "curly": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "browser": true,
+  "forin": true,
+  "freeze": true,
+  "noarg": true,
+  "noempty": true,
+  "nonbsp": true,
+  "undef": true,
+  "unused": true
+
+}

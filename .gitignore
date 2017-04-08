@@ -1,0 +1,25 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CoverageDashboard.Core/obj/Debug
+/CoverageDashBoard.Mongo/bin
+/CoverageDashBoard.Mongo/obj/Debug
+/CoverageDashboard.Tests/obj/Debug
+/CoverageDashboard.Web/bin
+/CoverageDashboard.Web/obj/Debug
+/CoverageDashboard.WebApi/bin
+/packages
+/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+/CoverageDashboard.Application/obj/Debug
+/CoverageDashboard.Core/bin/Debug
+/CoverageDashboard.Application/bin/Debug
+/CoverageDashboard.Tests/bin/Debug
+/CoverageDashboard.WebApi/obj/Debug
+/CoverageDashboard.Web/lib/_app
+/CoverageDashboard.sln.DotSettings.user
+/CoverageDashboard.WebApi/App_Data/Logs/Logs.txt
+/.vs/config
+/.vs/CoverageDashboard/v14
+/CoverageDashboard.WebApi.Tests

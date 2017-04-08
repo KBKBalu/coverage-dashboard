@@ -1,0 +1,58 @@
+﻿<div class="text-center">
+    <h1>Training</h1>
+    <div class="form-group">
+        <button class="btn" data-toggle="modal" data-target="#crudTrainingPopover" style="float: right;">
+            <span><i class="fa fa-plus-circle"></i></span>
+        </button>
+        <br />
+        <table class="uui-table stripe ">
+            <thead>
+                <tr>
+                    <!--<th>Id</th>-->
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Trainer</th>
+                    <th colspan="2"></th>
+                </tr>
+            </thead>
+            <tr ng-repeat="training in trainings track by $index">
+                <!--<td>{{training.Id}}</td>-->
+                <td>{{training.Title}}</td>
+                <td>{{training.Description}}</td>
+                <td>{{training.Trainer}}</td>
+                <td>
+                    <button class="btn btn-info btn-sm" ng-click="editTrainingDetails(training, $index)">
+                        Edit
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-danger btn-sm" ng-click="removeFromList($index)">
+                        Remove
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <br />
+
+
+    <div class="modal uui-modal fade blue" id="crudTrainingPopover" tabindex="-1" role="dialog" aria-labelledby="crudTrainingPopoverLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header blue">
+                    <h4 class="modal-title">Add/Update Trainings</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span></span><span></span></button>
+                </div>
+                <div class="modal-body">
+                    <crud-training action="addDetails"></crud-training>
+                    <!--<crud-training action="editDetails" ng-show="editDetailsForm"></crud-training>-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="uui-button transparent">Cancel</button>
+                    <button type="button" class="uui-button lime-green">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
